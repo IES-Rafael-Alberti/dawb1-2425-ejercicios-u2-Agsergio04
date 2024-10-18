@@ -6,13 +6,8 @@ def main():
     contrasenia = "python"
     
     while bandera:
-        try:
-            pregunta = input("Introduce la contraseña: ")
-            
-        except ValueError:
-            print("*ERROR* introduce una cadena de caracteres.")  
-            
-        pregunta.split().lower()      
+        pregunta = input("Introduce la contraseña: ").lower()
+
         if pregunta == contrasenia:
             bandera = False
         else:

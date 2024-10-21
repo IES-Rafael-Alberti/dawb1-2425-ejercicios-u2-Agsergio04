@@ -6,7 +6,7 @@ def comprobar_edad(edad):
     condicion = True
     try:
         int(edad)
-        if int(edad) < 18:
+        if int(edad) < 18 :
             condicion = False
     
     except ValueError:

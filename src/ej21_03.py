@@ -1,8 +1,7 @@
 def division_numero(primer_numero,segundo_numero):
     resultado  = 0
     
-    numerador = comprobar_numero(primer_numero)
-    denominador = comprobar_numero(segundo_numero)
+    numerador,denominador = primer_numero,segundo_numero
     
     resultado = numerador / denominador
     
@@ -10,8 +9,8 @@ def division_numero(primer_numero,segundo_numero):
 
 def main():
     try:
-        primer_numero = input("Introduce un numero: ")
-        segundo_numero = input("Introduce otro numero: ")
+        primer_numero = int(input("Introduce un numero: "))
+        segundo_numero = int(input("Introduce otro numero: "))
         
         resultado = division_numero(primer_numero,segundo_numero)
     except ValueError:

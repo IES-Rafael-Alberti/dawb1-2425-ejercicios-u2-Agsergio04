@@ -5,6 +5,8 @@ def comprobar_tributacion(dinero):
         comprobar_dinero = True
     
     return comprobar_dinero
+
+
 def comprobar_edad(anios):
     comprobracion_edad = False
     
@@ -13,11 +15,13 @@ def comprobar_edad(anios):
         
     return comprobracion_edad
 
+
 def pedir_edad_y_tributacion():
     anios = int(input("¿Cuantos años tienes?\n"))
     dinero = float(input("¿Cuanto dinero cobras?\n"))
     
     return anios,dinero
+
 
 def main():
     bandera = True

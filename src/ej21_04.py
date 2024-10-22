@@ -10,9 +10,10 @@ def main():
     while bandera:
         try:
             entrada = input("Introduce un numero entero. \nEscribe fin para salir!!\n").lower()
+            
             if entrada == "fin":
                 break
-                
+        
             entrada = int(entrada)
             print(par_o_impar(entrada))
             

@@ -6,6 +6,19 @@ def par_o_impar(numero):
     return comprobacion
 
 def main():
-    pass
+    bandera = True
+    while bandera:
+        try:
+            entrada = input("Introduce un numero entero. \nEscribe fin para salir!!\n").lower()
+            if entrada == "fin":
+                break
+                
+            entrada = int(entrada)
+            print(par_o_impar(entrada))
+            
+        except ValueError :
+            print("**ERROR**\nIntroduce un numero valido")
+            
+            
 if __name__ == "__main__":
     main()

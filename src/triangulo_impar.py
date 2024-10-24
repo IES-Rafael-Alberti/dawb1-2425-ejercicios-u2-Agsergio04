@@ -3,8 +3,8 @@ def crear_triangulo_impar(altura):
     triangulo = ""
     
     for i in range(1,altura + 1,2):
-        cadena += str(i) + " "
-        triangulo += cadena [::-1] + "\n"
+        cadena = str(i) + " " + cadena
+        triangulo = triangulo + cadena + " \n"
     
     return triangulo
 
@@ -12,9 +12,9 @@ def crear_triangulo_par(altura):
     cadena = ""
     triangulo = ""
     
-    for i in range(0,altura,2):
-        cadena += str(i) + " "
-        triangulo += cadena [::-1] + "\n"
+    for i in range(0,altura + 1,2):
+        cadena = str(i) + " " + cadena
+        triangulo = triangulo + cadena + " \n"
     
     return triangulo
 

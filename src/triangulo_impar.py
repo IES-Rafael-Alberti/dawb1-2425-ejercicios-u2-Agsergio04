@@ -1,22 +1,17 @@
-def crear_triangulo_impar(altura):
+def crear_triangulo(altura):
     cadena = ""
     triangulo = ""
+    inicio = 1
     
-    for i in range(1,altura + 1,2):
+    if (altura % 2 == 0):
+        inicio = 0
+    
+    for i in range(inicio,altura + 1,2):
         cadena = str(i) + " " + cadena
         triangulo = triangulo + cadena + " \n"
     
     return triangulo
 
-def crear_triangulo_par(altura):
-    cadena = ""
-    triangulo = ""
-    
-    for i in range(0,altura + 1,2):
-        cadena = str(i) + " " + cadena
-        triangulo = triangulo + cadena + " \n"
-    
-    return triangulo
 
 def par_o_impar(valor):
     comprobacion = True
@@ -50,10 +45,7 @@ def main():
     
     altura = comprobar_numero()
     
-    if par_o_impar(altura):  
-        triangulo = crear_triangulo_impar(altura)
-    else:
-        triangulo = crear_triangulo_par(altura)
+    triangulo = crear_triangulo(altura)
 
     print(triangulo)
     

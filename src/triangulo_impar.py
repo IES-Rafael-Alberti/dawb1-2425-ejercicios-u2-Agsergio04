@@ -30,13 +30,15 @@ def comprobar_numero():
             numero_entero = int(numero)
             
             if numero_entero < 0:
-                raise ValueError("**ERROR***\nIntroduce un número entero positivo.")
+                raise ZeroDivisionError("**ERROR***\nIntroduce un número entero positivo.")
             
             comprobacion =  numero_entero
             if numero_entero != None:
                 condicion = False
-        except ValueError as mensaje:
+        except ZeroDivisionError as mensaje:
             print(mensaje)
+        except ValueError:
+            print("**ERROR***\nIntroduce un número entero.")
         
     return comprobacion  
 

@@ -1,5 +1,5 @@
 def determinar_tipo(valor):
-    tipo = " "
+    tipo = None
 
     if 0 < valor < 0.4:
         tipo = "Inaceptable"

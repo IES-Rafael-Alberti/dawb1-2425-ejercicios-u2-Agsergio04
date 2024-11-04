@@ -1,5 +1,5 @@
 def par_o_impar(numero):
-    comprobacion = "Impar" 
+    comprobacion = "impar" 
     if (numero % 2 == 0):
         comprobacion = "par"
     

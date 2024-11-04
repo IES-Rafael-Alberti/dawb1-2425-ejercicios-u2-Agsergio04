@@ -23,12 +23,14 @@ def main():
 
             if edad == 0:
                 break
+            if edad < 0:
+                raise ValueError("**ERROR**\nIntroduce una edad valida.")
 
             mensaje = calcular_precio(edad)
 
             print(f"Tienes {edad} años,asi que {mensaje}") 
 
-        except ValueError:
-            print("**ERROR**\nIntroduce una edad valida.")    
+        except ValueError as mensaje:
+            print(mensaje)    
 if __name__ == "__main__":
     main()
